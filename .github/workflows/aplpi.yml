@@ -7,7 +7,7 @@ jobs:
     env:
       PACKAGE_NAME: MistKit
 
-    runs-on: [aplpi]
+    runs-on: [self-hosted, Linux, ARM64]
     if: "!contains(github.event.head_commit.message, 'ci skip')"
 
     steps:
